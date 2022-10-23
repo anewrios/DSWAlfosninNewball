@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+padding: 20px 0;
+text-align: center;
+font-size: 1.6em;
+
+}
+/* aqui comeinza los estilos del menu */
+#header{
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: lightcoral;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+
+
+.nav li a:hover{
+    background-color: lightgray;
+
+}
+
+.nav > li{
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+display: block;
+}                       /* aqui termina los estilos del menu */
+
+
+
+/* contenedor: es el recuadro completo */
+.contenedor{
+    background-color: lightcyan; 
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5,1fr) ;
+
+}
+
+article p, ul,li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightcyan;
+    text-align: justify;
+    
+}
+
+article h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+
+
+/* aqui se marcan las 4 grillas  */
+.contenedor>.menu, .contenedor>.contenido, .contenedor>.lateral, .contenedor>.footer, .contenedor> div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+/* aqui se estira por las 5 grillas el header y el footer */
+.contenedor .menu,
+.contenedor .footer{
+    grid-column: 1/6;
+    background: #1e272e;
+    color: #ffffff;
+
+}
+
+ .contenedor > .contenido{
+    grid-column: span 3;
+ }
+
+ .contenido > .articulo{
+    background: #807e90;
+    padding: 20px;
+    margin-top: 5px;
+    color: #ffffff;
+ }
+
+ .contenedor> .lateral{
+    grid-column: span 2;
+}
+.contenedor> .lateral{
+   
+    background: #485460;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+ }
+ 
+ .contenedor .lateral audio{
+    align-items: rigth;
+ }
+.contenido .lateral iframe{
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+
+/* estilos de los post */
+ .contenedor> .post{
+    bord: 20px;
+    background: #485460;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+ }
+
+/* transision de los post */
+ .contenedor > .post:hover{
+    cursor: pointer;
+    color:#000000;
+    background: #ffffff;
+
+
+ }
+
+
+
+.contenido .articulo h1,
+.contenido .articulo p{
+    padding: 10px;
+}
+
+.footer img{
+    width: 5%;
+   
+}
+
+@media screen and (max-width: 768px){
+    
+    .header{
+        text-align: center;
+    }
+
+    .contenedor .contenido{
+        grid-column: 1/-1;
+    }
+
+    .contenedor .lateral{
+        grid-column: 1/-1;
+    }
+    .contenedor .post{
+        grid-column: 1/-1;
+    }
+
+    .contenedor .menu{
+        grid-column: 1/-1;
+    }
+}
