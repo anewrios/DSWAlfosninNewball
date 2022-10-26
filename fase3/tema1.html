@@ -45,33 +45,67 @@
              </ul>
            </li>
 
-             <li><a href="">Autor</a></li>
+             <li><a href="autor.html">Autor</a></li>
 
              </ul>
       </header>
       <main class="contenido">
         <article class="articulo">
-            <h1>titulo</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum facere quisquam officia qui nam cumque commodi eos beatae voluptatem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, debitis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</p>
+          <h1>
+           FlexBox en HTML
+         </h1>
+         <p>FlexBox es uno de los nuevos valores HTML5 para propiedad CSS display,
+             que nos permite maquinar nuestras páginas web de una manera mucho más
+             fácil de lo que se hacía con la forma tradicional, en la que utilizábamos
+             propiedades como float o position, entre otras.</p> 
+             <p>Se llama Flex porque tenemos un contenedor, llamado contenedor Flex, que es el
+             elemento que contiene la propiedad display: flex.</p>
+            <p> Desde ese contenedor vamos a poder especificar la alineación de los elementos que hay
+              dentro, el tamaño de los elementos que contienen y distribuir el espacio restante que 
+              hay entre los elementos del contenedor Flex, y todo esto en una sola dirección, ya sea una 
+              horizontal o vertical. Es decir, podemos distribuir los elementos que contiene la
+               etiqueta sin poner nada dentro de estos elementos.</p>
+
+               Conceptos Básicos<p>
+                 <p>Los elementos básicos de Flexbox son: </p>
+                 
+                  <ul>
+                     <li>1.Contenedor: Existe un elemento padre que es el contenedor, ya que tendrá en su interior<br>
+                         cada uno de los ítems flexibles y adaptables.
+                     </li>
+                         <ul>
+                             <li>Eje principal: Los contenedores flexibles tendrán una orientación principal <br>
+                                 específica. Por defecto es horizontal con el valor row.
+                             </li>
+                             <li>Eje secundario: De la misma forma que el eje principal, solo que esta orientación <br>
+                                 será perpendicular a la principal. Si la principal es horizontal, la secundaría será <br>
+                                 vertical con el valor column, y viceversa.
+                             </li>
+                         </ul>
+                     
+                     
+                 
+                   <img src="..\img\flex1.jpg" width="250" height="250" ><br>
+                                 
+                     <li>2.Item. Cada uno de los hijos flexibles que tendrá el contenedor en su interior.<br>
+                         Viendo esto en código sería de la siguiente forma. <p>
+                         
+                     </li>
+                          <img src="..\img\flex2.jpg" width="400" height="50" >
+     
+                     <p>Para volver a dicho contenedor un contenedor flexible habrá que modificar su valor <br>
+                        display por defecto.
+                     </p>
+                     <img src="..\img\flex3.jpg" width="400" height="50" ><p>
+                 </ul>
+                 
         </article>
-        <article class="articulo">
-            <h1>titulo</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum facere quisquam officia qui nam cumque commodi eos beatae voluptatem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, debitis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</p>
-        </article>
+        
       </main>
       
       <aside class="lateral">
         <div>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/0U3WzIE9R_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, labore.</p>
-          </div>
-          <div>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/1WPK0rmtEbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, labore.</p>
+          <a class="twitter-timeline" data-width="340" data-height="1200"  href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets de la Universidad UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
 
       </aside>
