@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+  <header class="titulo">
+    <h1>Flexbox y Listas en Html</h1>
+</header
+
+   <div class="contenedor">
+      <header class="menu">
+        <div id="header">
+            <ul class="nav">
+           
+                     <li><a href="index.html">Inicio</a></li>
+
+                     <li><a href="">Temas</a>
+            
+                      <ul>
+                      <li><a href="tema1.html">Flexbox</a></li>
+                      <li><a href="tema2.html">Listas</a></li>
+                      </ul>
+                   </li>
+
+            <li><a href="">Recursos</a>
+           
+              <ul>
+               <li><a href="recurso1.html">Videos</a></li>
+               <li><a href="recurso2.html">Potcast</a></li>
+             </ul>
+           </li>
+
+
+            <li><a href="">Aprendizaje</a>
+
+             <ul>
+               <li><a href="aprende1.html">Aprendizaje1</a></li>
+               <li><a href="aprende2.html">Aprendizaje2</a></li>
+             </ul>
+           </li>
+
+             <li><a href="autor.html">Autor</a></li>
+
+             </ul>
+      </header>
+      <main class="contenido">
+        <article class="articulo">
+          <h1>
+           FlexBox en HTML
+         </h1>
+         <p>FlexBox es uno de los nuevos valores HTML5 para propiedad CSS display,
+             que nos permite maquinar nuestras páginas web de una manera mucho más
+             fácil de lo que se hacía con la forma tradicional, en la que utilizábamos
+             propiedades como float o position, entre otras.</p> 
+             <p>Se llama Flex porque tenemos un contenedor, llamado contenedor Flex, que es el
+             elemento que contiene la propiedad display: flex.</p>
+            <p> Desde ese contenedor vamos a poder especificar la alineación de los elementos que hay
+              dentro, el tamaño de los elementos que contienen y distribuir el espacio restante que 
+              hay entre los elementos del contenedor Flex, y todo esto en una sola dirección, ya sea una 
+              horizontal o vertical. Es decir, podemos distribuir los elementos que contiene la
+               etiqueta sin poner nada dentro de estos elementos.</p>
+
+               Conceptos Básicos<p>
+                 <p>Los elementos básicos de Flexbox son: </p>
+                 
+                  <ul>
+                     <li>1.Contenedor: Existe un elemento padre que es el contenedor, ya que tendrá en su interior<br>
+                         cada uno de los ítems flexibles y adaptables.
+                     </li>
+                         <ul>
+                             <li>Eje principal: Los contenedores flexibles tendrán una orientación principal <br>
+                                 específica. Por defecto es horizontal con el valor row.
+                             </li>
+                             <li>Eje secundario: De la misma forma que el eje principal, solo que esta orientación <br>
+                                 será perpendicular a la principal. Si la principal es horizontal, la secundaría será <br>
+                                 vertical con el valor column, y viceversa.
+                             </li>
+                         </ul>
+                     
+                     
+                 
+                   <img src="..\img\flex1.jpg" width="250" height="250" ><br>
+                                 
+                     <li>2.Item. Cada uno de los hijos flexibles que tendrá el contenedor en su interior.<br>
+                         Viendo esto en código sería de la siguiente forma. <p>
+                         
+                     </li>
+                          <img src="..\img\flex2.jpg" width="400" height="50" >
+     
+                     <p>Para volver a dicho contenedor un contenedor flexible habrá que modificar su valor <br>
+                        display por defecto.
+                     </p>
+                     <img src="..\img\flex3.jpg" width="400" height="50" ><p>
+                 </ul>
+                 
+        </article>
+        
+      </main>
+      
+      <aside class="lateral">
+        <div>
+          <a class="twitter-timeline" data-width="340" data-height="1200"  href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets de la Universidad UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         </div>
+
+      </aside>
+
+     
+
+      <footer class="footer">
+        
+        <img src="foto.jpg" alt="">
+        Alfonsin Newball Rios, Cod 9911762, Ing de sistemas,anrios@unadvirtual.edu.co 
+      </footer>
+
+   </div>
+
+</body>
+</html>

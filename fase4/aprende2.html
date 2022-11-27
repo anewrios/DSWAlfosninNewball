@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  <div class="container-fluid bg-primary">
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+    </div>
+
+ </div>
+ <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/flex3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/flex4.png" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+<h1>Resuelve un pequeño cuestionario</h1>
+  
+
+
+  <div class="container mt-2">
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">1-¿El Flex Box esta relacionado con?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona una Respuesta</option>
+            <option value="1">CSS</option>
+            <option value="2">HTML</option>
+            <option value="3">PHP</option>
+            <option value="3">JAVASCRIPT</option>
+          </select>
+          <li class="list-group-item active" aria-current="true">2-¿Con que propiedad en CSS se activa el Flexbox?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona una Respuesta</option>
+            <option value="1">DISPLAY</option>
+            <option value="2">TRANSFORM</option>
+            <option value="3">MARGIN</option>
+            <option value="3">BACKGROUND</option>
+          </select>
+          <li class="list-group-item active" aria-current="true">3-¿Para controlar la alineación del eje principal de un contenedos con flexbox se utiliza la propiedad?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona una Respuesta</option>
+            <option value="1">flex-direction</option>
+            <option value="2">display-align</option>
+            <option value="3">in-line</option>
+            <option value="3">content-position</option>
+          </select>
+          <li class="list-group-item active" aria-current="true">4-¿Si tengo un contenedor con la propiedad flex-wrap por defecto que sucede?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Respuesta</option>
+            <option value="1">Los elementos del contenedor se desbordan</option>
+            <option value="2">Se evitaria el desbordamiento de los elementos dentro de este contenedor</option>
+            <option value="3">Obtendriamos un contenedor flexbox multilinea</option>
+            <option value="3">Los elementos del contenedor se alinean en posicion vertical</option>
+          </select>
+          <li class="list-group-item active" aria-current="true">5-¿Si deseo los items de un contenedor de manera horizontal y que se desborden de manera invertida las propiedades flex-direction y flex-wrap deben tener los siguientes valores respectivamente?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Respuesta</option>
+            <option value="1">row, wrap-reverse</option>
+            <option value="2">column-reverse, wrap-reverse</option>
+            <option value="3">column, wrap</option>
+            <option value="3">row, nowrap</option>
+          </select>
+                  
+        </ul>
+      </div>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./img/opcion2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Video 1</h5>
+            <p class="card-text">Caso practico de flexbox</p>
+            <a href=https://www.youtube.com/watch?v=9TcStLE3qzI&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=11 class="btn btn-primary">Aprendamos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./img/opcion2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Video 2</h5>
+            <p class="card-text">Caso practico de flexbox</p>
+            <a href="https://www.youtube.com/watch?v=po9V3IoxbJc&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=12" class="btn btn-primary">Aprendamos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./img/opcion2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Video 3</h5>
+            <p class="card-text">Bootstraps y Flexbox</p>
+            <a href="https://www.youtube.com/watch?v=z11iV2JKHVc&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=13" class="btn btn-primary">Aprendamos</a>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+
+    
+    <footer class="footer mt-5">
+        
+      <img src="./foto.jpg" alt="">
+      Alfonsin Newball Rios, Cod 9911762, Ing de sistemas,anrios@unadvirtual.edu.co 
+    </footer>
+
+</body>
+
+
+
+</html>
